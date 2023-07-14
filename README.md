@@ -1,1 +1,0 @@
-# killerkoda-docker
