@@ -1,2 +1,2 @@
 #!/bin/bash  
-history | grep "docker --version"
+cat docker-version.txt

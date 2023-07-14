@@ -1,4 +1,4 @@
-Crie um arquivo chamado `docker-version.txt `contendo `a versão do docker instalada`.
+Crie um arquivo chamado `docker-version.txt`contendo `a versão do docker instalada`.
 
 ```plain
 Você pode executar o comando:
