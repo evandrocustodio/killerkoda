@@ -1,2 +1,2 @@
 #!/bin/bash  
-pwd | grep "/cicd-exercicio-01"
+if [ "$(pwd)" = "/cicd-exercicio-02" ]; then exit 1 ; else exit 0; fi
