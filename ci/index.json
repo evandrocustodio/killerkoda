@@ -1,0 +1,22 @@
+{
+  "title": "CI - Aula 01 - Exercício 01",
+  "description": "Criando o primeiro repostório de código fonte",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Criando projeto cicd-exercicio-01",
+        "text": "step1/step1.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
