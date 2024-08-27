@@ -8,9 +8,20 @@
     "steps": [
       {
         "title": "Criando projeto cicd-exercicio-01",
-        "text": "step1/step1.md",
+        "text": "step1/step.md",
         "verify": "step1/verify.sh"
-      }
+      },
+      {
+        "title": "Acessando pasta cicd-exercicio-01",
+        "text": "step2/step.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Clonando projeto static-site-aula01",
+        "text": "step3/step.md",
+        "verify": "step3/verify.sh"
+      }      
+
     ],
     "finish": {
       "text": "finish.md"

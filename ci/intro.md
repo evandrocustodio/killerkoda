@@ -1,8 +1,7 @@
 | DISCIPLINA |PROFESSOR|
 |---|---|
-| ```> INTEGRAÇÃO E ENTREGA CONTÍNUA ```| ```> EVANDRO CUSTODIO <evandrocustodio@gmail.com> ```
+| INTEGRAÇÃO E ENTREGA CONTÍNUA | EVANDRO CUSTODIO <evandrocustodio@gmail.com>
 
-#### ATIVIDADE 01
 
 ##### OBJETIVO:
 
