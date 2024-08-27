@@ -1,2 +1,3 @@
 #!/bin/bash  
-if [ "$(pwd)" = "/cicd-exercicio-02" ]; then exit 1 ; else exit 0; fi
+DIR=$(pwd)
+if [ "$DIR" = "/cicd-exercicio-02" ]; then exit 0 ; else exit 1; fi
