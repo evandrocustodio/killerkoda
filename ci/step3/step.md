@@ -1,5 +1,6 @@
-Crie uma pasta `/cicd-exercicio-01`
+Clone o repositório do projeto 
+`https://github.com/evandrocustodio/static-site-aula01.git`
 
 ```plain
-O comando do linux para criação de pasta é o mkdir:
+O comando do git para clonar reposiórios é o git clone <repositorio>.
 ```{{exec}}
