@@ -2,5 +2,5 @@ Crie um arquivo chamado `docker-version.txt`contendo `a versão do docker instal
 
 ```plain
 Você pode executar o comando:
-`docker --version`
+docker --version
 ```{{exec}}
