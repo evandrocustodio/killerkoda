@@ -1,5 +1,7 @@
 3. Crie um repositório local do git 
 
+<img src="https://www.dataquest.io/wp-content/uploads/2024/04/git_init.svg" />
+
 ```plain
 O comando do git para inicializar um reposiório local é:
 
