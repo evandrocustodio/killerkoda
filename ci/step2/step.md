@@ -5,6 +5,6 @@ O comando do linux para navegar e de pasta é
 ```
 
 ```plain
-cd <pasta>
+cd /cicd-exercicio-01
 
 ```{{exec}}
