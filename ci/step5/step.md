@@ -1,4 +1,4 @@
-3. Crie o arquivo abacaxi.txt
+3. Crie o arquivo abacaxi.txt com o segunte conteudo conteúdo:
 
 ```plain
     O abacaxi ou ananás é uma infrutescência tropical produzida 
