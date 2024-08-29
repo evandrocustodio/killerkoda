@@ -1,2 +1,2 @@
 #!/bin/bash  
-ls -ila /cicd-exercicio-01
+ls -ila cicd-exercicio-01

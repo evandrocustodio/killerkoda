@@ -21,7 +21,12 @@
       {
         "title": "4. Configurando repositório",
         "text": "step4/step.md"
-      }      
+      },
+      {
+        "title": "5. Criando o primeiro arquivo",
+        "text": "step5/step.md"
+      }
+               
 
     ],
     "finish": {
