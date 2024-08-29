@@ -1,25 +1,25 @@
 {
   "title": "CI - Aula 01 - Exercício 01",
-  "description": "Criando o primeiro repostório de código fonte",
+  "description": "1. Criando o pasta do repositório",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "Criando projeto cicd-exercicio-01",
+        "title": "2. Acessando pasta do repositório",
         "text": "step1/step.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "Acessando pasta cicd-exercicio-01",
+        "title": "3. Criando repositório local",
         "text": "step2/step.md",
         "verify": "step2/verify.sh"
       },
       {
-        "title": "Clonando projeto static-site-aula01",
-        "text": "step3/step.md",
-        "verify": "step3/verify.sh"
+        "title": "4. Configurando repositório",
+        "text": "step4/step.md",
+        "verify": "step4/verify.sh"
       }      
 
     ],
