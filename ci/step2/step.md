@@ -4,7 +4,4 @@
 O comando do linux para navegar e de pasta é
 ```
 
-```plain
-cd cicd-exercicio-01
-
-```{{exec}}
+`cd cicd-exercicio-01`{{exec}}
