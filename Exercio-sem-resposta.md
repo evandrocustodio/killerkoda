@@ -1,6 +1,5 @@
 # Integração Contínua
 
-
 ## 🚀 Atividade 01 - Git Básico
 
 Faça o exercício na sequencia e sempre copiando os passos já executados.
@@ -34,9 +33,13 @@ Caso passe de 1h será necessário reiniciar a atividade.
 
 10. Verifique a árvore de commits
 
+   git log --graph --decorate --oneline
+
 11. Liste os branchs existente no projeto
 
 12. Crie o branch develop
+
+git checkout -b <nome>
 
 13. Liste os branchs existente no projeto
 
@@ -62,26 +65,34 @@ Caso passe de 1h será necessário reiniciar a atividade.
 
 24. Crie um arquivo arquivo08.txt, Adicione o arquivo arquivo08.txt ao branch featureB, faça o commit; 
 
-25. Retorne para o branch develop
+25. Retorne para o branch master
 
-26. Crie um arquivo arquivo09.txt. Adicione o arquivo arquivo09.txt ao branch develop e faça o commit; 
+26. Crie um arquivo arquivo09.txt. Adicione o arquivo arquivo09.txt ao branch master e faça o commit; 
 
-27. Crie o branch featureC a partir do branch Develop
+27. Faça merge do branch featureA no develop
 
-28. Crie um arquivo arquivo10.txt, Adicione o arquivo arquivo10.txt ao branch featureC, faça o commit; 
+28. Crie a tag v1.0.0 da develop
 
-29. Crie um arquivo arquivo11.txt, Adicione o arquivo arquivo11.txt ao branch featureC, faça o commit; 
+29. Crie o branch featureC a partir do branch Develop
 
-30. Retorne para o branch master
+30. Crie um arquivo arquivo10.txt, Adicione o arquivo arquivo10.txt ao branch featureC, faça o commit; 
 
-31. Altere o arquivo README.md, Adicione a alteração ao branch master, faça o commit; 
+31. Crie um arquivo arquivo11.txt, Adicione o arquivo arquivo11.txt ao branch featureC, faça o commit; 
 
 32. Retorne para o branch develop
 
 33. Faça o merge do featureC no branch develop
 
-34. Faça o merge do master no develop
+34. Faça o merge do master no branch develop
 
-35. retorne para o branch master
+35. Faça o merge do featureB no branch develop
 
-36. Faça o merge do develop para o  master
+36. retorne para o branch master
+
+37. Faça o merge do develop para o  master
+
+38. Crie a tag v1.0.1 do branch master
+
+39. Verifique os branchs existentes
+
+40. Verifique os tags existentes

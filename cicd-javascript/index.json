@@ -1,0 +1,22 @@
+{
+  "title": "Docker Aula 01",
+  "description": "Criando primeiro container",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Verificar versão do Docker",
+        "text": "step1/step1.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

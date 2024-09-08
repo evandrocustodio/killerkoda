@@ -80,7 +80,7 @@ git branch
 
 12. Crie o branch develop
 ```
-git checkout develop
+git checkout -b develop
 ```
 
 13. Liste os branchs existente no projeto
@@ -162,21 +162,20 @@ git add arquivo07.txt
 git commit -m "Adicionando arquivo07.txt ao featureB"
 ```
 
-
 24. Crie um arquivo arquivo08.txt, Adicione o arquivo arquivo08.txt ao branch featureB, faça o commit; 
 
 ```
 echo "Criando arquivo arquivo08.txt" > arquivo08.txt
-git add arquivo07.txt
+git add arquivo08.txt
 git commit -m "Adicionando arquivo08.txt ao featureB"
 ```
 
-25. Retorne para o branch develop
+25. Retorne para o branch master
 ```
-git checkout develop
+git checkout master
 ```
 
-26. Crie um arquivo arquivo09.txt. Adicione o arquivo arquivo09.txt ao branch develop e faça o commit; 
+26. Crie um arquivo arquivo09.txt. Adicione o arquivo arquivo09.txt ao branch master e faça o commit; 
 
 ```
 echo "Criando arquivo arquivo09.txt" > arquivo09.txt
@@ -184,12 +183,22 @@ git add arquivo09.txt
 git commit -m "Adicionando arquivo09.txt ao develop"
 ```
 
-27. Crie o branch featureC a partir do branch Develop
+
+27. Faça merge do branch featureA no develop
 ```
+git checkout develop
+git merge featureA
+```
+
+28. Crie a tag v1.0.0 da develop
+
+29. Crie o branch featureC a partir do branch Develop
+```
+git checkout develop
 git checkout -b featureC
 ```
 
-28. Crie um arquivo arquivo10.txt, Adicione o arquivo arquivo10.txt ao branch featureC, faça o commit; 
+30. Crie um arquivo arquivo10.txt, Adicione o arquivo arquivo10.txt ao branch featureC, faça o commit; 
 
 ```
 echo "Criando arquivo arquivo10.txt" > arquivo10.txt
@@ -197,25 +206,12 @@ git add arquivo10.txt
 git commit -m "Adicionando arquivo10.txt ao featureC"
 ```
 
-29. Crie um arquivo arquivo11.txt, Adicione o arquivo arquivo11.txt ao branch featureC, faça o commit; 
+31. Crie um arquivo arquivo11.txt, Adicione o arquivo arquivo11.txt ao branch featureC, faça o commit; 
 
 ```
 echo "Criando arquivo arquivo11.txt" > arquivo11.txt
 git add arquivo11.txt
 git commit -m "Adicionando arquivo11.txt ao featureC"
-```
-
-30. Retorne para o branch master
-```
-git checkout master
-```
-
-31. Altere o arquivo README.md, Adicione a alteração ao branch master, faça o commit; 
-
-```
-echo "Alterando o arquivos README.md" > README.md
-git add README.md
-git commit -m "Alterando o conteúdo do README.md"
 ```
 
 32. Retorne para o branch develop
@@ -228,17 +224,41 @@ git checkout develop
 git merge featureC
 ```
 
-34. Faça o merge do master no develop
+
+34. Faça o merge do master no branch develop
 ```
 git merge master
 ```
 
-35. retorne para o branch master
+
+35. Faça o merge do featureB no branch develop
+```
+git merge featureB
+```
+
+36. retorne para o branch master
 ```
 git checkout master
 ```
 
-36. Faça o merge do develop para o  master
+37. Faça o merge do develop para o  master
 ```
 git merge develop
+```
+
+
+38. Crie a tag v1.0.0 do branch master
+```
+git tag v1.0.1
+```
+
+39. Verifique os branchs existentes
+```
+git branch
+```
+
+
+40. Verifique os tags existentes
+```
+git tag
 ```
