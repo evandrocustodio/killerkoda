@@ -11,24 +11,7 @@
       {
         "title": "1. Criando pasta do repositório",
         "text": "step1/step.md"
-      },
-      {
-        "title": "2. Acessando pasta do repositório",
-        "text": "step2/step.md"
-      },      
-      {
-        "title": "3. Criando repositório local",
-        "text": "step3/step.md"
-      },
-      {
-        "title": "4. Configurando repositório",
-        "text": "step4/step.md"
-      },
-      {
-        "title": "5. Criando o primeiro arquivo",
-        "text": "step5/step.md"
-      }
-               
+      }    
 
     ],
     "finish": {
