@@ -5,7 +5,11 @@
 
 ##### OBJETIVO:
 
-* Realizar práticas no sistemas de controle de versão - GIT
-
+* Criar conta no NPM
+* Criar um projeto Node/Javascript
+* Publicar versão no NPM
+* Criar repositório remoto no github
+* Publicar projeto no github
+* Criar pipeline do projeto no github
 
 **DIVITA-SE !!!**
