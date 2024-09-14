@@ -1,7 +1,7 @@
 ### PROJETO JAVASCRIPT
 1.	Crie uma pasta **uf-cicd-calcjs-nomealuno**
 2.	Acesse a pasta **uf-cicd-calcjs-nomealuno**
-3.	Crie um repositório GIT para o exercicio.
+3.	Crie um repositório GIT.
 4.	Configure seu usuário e email
 ```
  git config --global user.email "<emai@gmail.com>"
@@ -266,10 +266,7 @@ jobs:
 ```
       # Passo 4: Rodar análise de código com SonarCloud
       - name: SonarCloud Scan
-        uses: sonarsource/sonarcloud-github-action@v2
-        with:
-          projectKey: <your-project-key>
-          organization: <your-organization-key>
+        uses: SonarSource/sonarcloud-github-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 ```
@@ -296,6 +293,3 @@ sonar.branch.name=main
 58.	Faça o 17º Commit do projeto.
 
 ***
-
-
-
