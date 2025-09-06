@@ -84,8 +84,7 @@
 
 18.	Faça o 5º Commit do projeto.
 19.	Vá para o branch *develop* e faça o merge com o branch `feature-multiplicacao`
-20.	Faça o 6º Commit do projeto.
-21.	Ainda no branch `develop`, altere o arquivo `calculadora.js` adicionando a **função potenciação**.
+20.	Ainda no branch `develop`, altere o arquivo `calculadora.js` adicionando a **função potenciação**.
 ```
     // Função de potenciação
     function power(base, exponent) {
@@ -101,15 +100,15 @@
     };
 
 ```
-22.	Faça o 7º Commit do projeto.
-23.	Vá para o branch *feature-divisao* e faça o merge com o branch `develop`
-24.	Resolva o conflito gerado e faça o  8º Commit;
-25.	Vá para o branch *develop* e faça o merge com o branch `feature-divisao`
-26.	Adicione a biblioteca do JEST para execução dos testes unitário
+21.	Faça o 7º Commit do projeto.
+22.	Vá para o branch *feature-divisao* e faça o merge com o branch `develop`
+23.	Resolva o conflito gerado e faça o  8º Commit;
+24.	Vá para o branch *develop* e faça o merge com o branch `feature-divisao`
+25.	Adicione a biblioteca do JEST para execução dos testes unitário
 ```
 npm install --save-dev jest
 ```
-27.	No branch develop, crie o arquivo `calculadora.test.js` na pasta `src` com o conteúdo a seguir;
+26.	No branch develop, crie o arquivo `calculadora.test.js` na pasta `src` com o conteúdo a seguir;
 ```
 const { add, subtract, multiply, divide, power } = require('./calculadora');
 
@@ -153,31 +152,31 @@ describe('Funções Matemáticas Básicas', () => {
   });
 });
 ```
-28.	Execute os testes unitários para verificar se tudo está ok;
+27.	Execute os testes unitários para verificar se tudo está ok;
 ```
 npm test
 ```
-29.	Faça o 9º Commit do projeto.
-30.	Faça login no Repositorio NPM
+28.	Faça o 9º Commit do projeto.
+29.	Faça login no Repositorio NPM
 ```
     npm login --auth-type legacy
 ```
-31.	Publique a versao no repositório NPM
+30.	Publique a versao no repositório NPM
 ```
     npm publish
 ```
-32.	Acesse o repositório NPM e verifique se o a versão do projeto **uf-cicd-calcjs-nomealuno** foi adicionada.
+31.	Acesse o repositório NPM e verifique se o a versão do projeto **uf-cicd-calcjs-nomealuno** foi adicionada.
 
-33.	Atualize a chave SSH para envio do projeto para o github
+32.	Atualize a chave SSH para envio do projeto para o github
 ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
-34.	Acesse o link do ```https://github.com/settings/keys``` para cadastro de chave SSH
-35.	Crie um repositório no github com o nome **uf-cicd-calcjs-nomealuno**
-36.	Crie o arquivo `.gitignore` com o conteúdo gerado pelo site `https://gitignore.io/`  para aplicações node;
-37.	Faça o envio do código do projeto para o github.
-38.	Crie um arquivo em ```.github/workflows/ci.yml``` com o seguinte conteúdo:
+33.	Acesse o link do ```https://github.com/settings/keys``` para cadastro de chave SSH
+34.	Crie um repositório no github com o nome **uf-cicd-calcjs-nomealuno**
+35.	Crie o arquivo `.gitignore` com o conteúdo gerado pelo site `https://gitignore.io/`  para aplicações node;
+36.	Faça o envio do código do projeto para o github.
+37.	Crie um arquivo em ```.github/workflows/ci.yml``` com o seguinte conteúdo:
 ```
 name: CI Pipeline
 on:
@@ -195,31 +194,31 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v3
 ```
-39.	Faça o 10º Commit do projeto.
-40.	Adicione a task de configuração do NodeJS
+38.	Faça o 10º Commit do projeto.
+39.	Adicione a task de configuração do NodeJS
 ```
       # Passo 2: Instalar o Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'
 ```
-41.	Faça o 11º Commit do projeto.
-42.	Adicione a task responsável por instalar as dependências do projeto
+40.	Faça o 11º Commit do projeto.
+41.	Adicione a task responsável por instalar as dependências do projeto
 ```
       # Passo 3: Instalar dependências do projeto
       - name: Install dependencies
         run: npm install
 ```
-43.	Faça o 12º Commit do projeto.
-44.	Adicione a task responsável pela execução dos testes do projeto
+42.	Faça o 12º Commit do projeto.
+43.	Adicione a task responsável pela execução dos testes do projeto
 ```
       # Passo 4: Rodar os testes unitários
       - name: Run tests
         run: npm test
 ```
-45.	Faça o 13º Commit do projeto.
-46.	Crie um segundo stage comado **publish** que será responsável pela publicação no repositório NPM;
+44.	Faça o 13º Commit do projeto.
+45.	Crie um segundo stage comado **publish** que será responsável pela publicação no repositório NPM;
 ```
   publish:
     runs-on: ubuntu-latest
@@ -230,24 +229,24 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v3
 ```
-47.	Faça o 14º Commit do projeto.
-48.	Adicione a task de configuração do NodeJS
+46.	Faça o 14º Commit do projeto.
+47.	Adicione a task de configuração do NodeJS
 ```
       # Passo 2: Instalar o Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'
 ```
-49.	Gere um TOKEN no repositório NPM e adicione no github como secret com o nome NPM_TOKEN
-50.	Adicione a task de configuração de autenticação no NPM
+48.	Gere um TOKEN no repositório NPM e adicione no github como secret com o nome NPM_TOKEN
+49.	Adicione a task de configuração de autenticação no NPM
 ```
       # Passo 3: Autenticar no NPM
       - name: Authenticate to npm
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 ```
-51.	Faça o 15º Commit do projeto.
-52.	Adicione a task de publicação no NPM
+50.	Faça o 15º Commit do projeto.
+51.	Adicione a task de publicação no NPM
 
 ```
       # Passo 4: Publicar no npm, se a versão tiver sido incrementada
@@ -256,13 +255,13 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 ```
-53.	Faça o 16º Commit do projeto.
+52.	Faça o 16º Commit do projeto.
 
-54.	Faça o cadastro no SONARCLOUD e crie um projeto público com o nome `uf-cicd-calcjs-nomealuno`;
+53.	Faça o cadastro no SONARCLOUD e crie um projeto público com o nome `uf-cicd-calcjs-nomealuno`;
 
-55.	Gere um TOKEN no SONARCLOUD e adicione no github como secret com o nome SONAR_TOKEN
+54.	Gere um TOKEN no SONARCLOUD e adicione no github como secret com o nome SONAR_TOKEN
 
-56.	Adicione a task responsável por análise estática de código com o sonarcloud antes dos testes unitários;
+55.	Adicione a task responsável por análise estática de código com o sonarcloud antes dos testes unitários;
 ```
       # Passo 4: Rodar análise de código com SonarCloud
       - name: SonarCloud Scan
@@ -270,7 +269,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 ```
-57.	Crie o arquivo ` sonar-project.properties` com as seguintes propriedades:
+56.	Crie o arquivo ` sonar-project.properties` com as seguintes propriedades:
 ```
 # Chave única do projeto no SonarCloud
 sonar.projectKey=<your-project-key>
@@ -290,6 +289,6 @@ sonar.tests=./tests
 # Informa o nome da branch padrão (geralmente "main")
 sonar.branch.name=main
 ```
-58.	Faça o 17º Commit do projeto.
+57.	Faça o 17º Commit do projeto.
 
 ***
